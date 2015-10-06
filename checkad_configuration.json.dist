@@ -1,0 +1,5 @@
+{
+  "ldap_connect":"ldap://server",
+  "ldaprdn":"CN=demo,OU=demo,DC=demo,DC=demo,DC=demo,DC=demo",
+  "ldappass":"demo",
+}

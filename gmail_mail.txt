@@ -1,0 +1,25 @@
+Hi #name,
+
+You have a new user at IRB Barcelona IT Services. This user consists of two accounts: email and domain. Initially both accounts have the same password which you would have to change after the first login.
+
+.- email account: '#username'. Your email address is #username@irbbarcelona.org. You can sign in to webmail services at http://mail.google.com/a/irbbarcelona.org/
+
+.- domain account: '#uid'
+
+.- initial password for both accounts: '#password'
+
+
+IMPORTANT information concerning the password management: Changing the password in one of the accounts does not mean that the other password is also changed.
+
+
+Additional information:
+
+1. Information Technology (IT) activities at IRB are regulated through a ACCEPTABLE USE POLICY. You are encouraged to read it thoroughly as it is the responsibility of every computer user to know these guidelines and to conduct his/her activities accordingly. The policy is available here (only accessible from the IRB network) http://intranet.irb.pcb.ub.es/images/intranetfiles/IRB_Acceptable_Use_Policy.pdf
+
+2. For any information regarding the IRB email service, please refer to http://intranet.irb.pcb.ub.es/index.php?option=com_content&view=article&id=93&Itemid=179
+
+3. Your IRB email account has a 30-day grace period after you leave IRB. After this grace period is over, your account will be closed.
+
+4. IRB Email accounts are personal, therefore you should not give your password to anyone nor share your email account with anyone.
+
+5. ITS strongly recommends that you give your spam folder a good look from time to time to verify that not an important email has been marked as spam.

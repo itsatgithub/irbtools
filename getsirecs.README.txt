@@ -1,0 +1,12 @@
+Roberto 2014-05-12 Generado este fichero
+
+Scripts:
+Los scripts que generan los archivos son
+  - getsirecs46.php
+  - getsirecs55.php
+  - getsirecs56.php
+cada uno para un número de fichero correspondiente.
+
+ Fichero 46:
+ El script getsirecs46.php debe modificarse con los parámetros adecuados. Estos parámetros están en el bloque marcado como
+ "====================== Actualizar este bloque ======================". No se debe de modificar nada fuera de este bloque.
