@@ -16,8 +16,8 @@
  */
 
 // ====================== Actualizar este bloque ======================
-$FILE = "BM1356.txt"; // nombre de archivo
-$YEAR = "2013"; // año de referencia para generar el archivo
+$FILE = "BM1456.txt"; // nombre de archivo
+$YEAR = "2014"; // año de referencia para generar el archivo
 $START_DATE = $YEAR . "-01-01";
 $END_DATE = $YEAR . "-12-31";
 $CODI_INSTITUCIO = "5068"; // codigo de IRB Barcelona. Este dato no cambia nunca
@@ -31,7 +31,7 @@ if (isset($_POST['boton']))
 		header("Content-Disposition: attachment; filename=\"$FILE\"");
 		
 		// conecto la bd
-		$conf = json_decode(file_get_contents('getsirecs55_configuration.json'), TRUE);
+		$conf = json_decode(file_get_contents('getsirecs56_configuration.json'), TRUE);
 		$db = mysql_connect($conf["host"], $conf["user"], $conf["password"]) or die ('I cannot connect to the database because: ' . mysql_error());
 		mysql_select_db($conf["database"]);
 				
