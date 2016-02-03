@@ -1,7 +1,7 @@
 <?php
 
 // connect the db
-$conf = json_decode(file_get_contents('generate_hem3_configuration.json'), TRUE);
+$conf = json_decode(file_get_contents('generate_configuration.json'), TRUE);
 $db = mysql_connect($conf["host"], $conf["user"], $conf["password"]) or die ('I cannot connect to the database because: ' . mysql_error());
 mysql_select_db($conf["database"]);
 
