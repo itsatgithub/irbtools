@@ -22,6 +22,9 @@ $query = "SELECT pro.professional_personal AS 'Employee N'"
 . "	ORDER BY pro.professional_personal"
 ;
 
+echo $query;
+break;
+
 /*
 $query = "SELECT pe.personalcode AS 'Employee N'"
 . ", pro.research_group AS 'Research Group 1'"
