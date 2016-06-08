@@ -14,9 +14,9 @@
  */
 
 // ====================== Actualizar este bloque ======================
-$FILE = "BM1455.txt"; // nombre de archivo
-$filename = "BM1455ICREAextra.txt"; // adding extra lines
-$YEAR = "2014"; // año de referencia para generar el archivo
+$FILE = "BM1555.txt"; // nombre de archivo
+$filename = "BM1555ICREAextra.txt"; // adding extra lines
+$YEAR = "2015"; // año de referencia para generar el archivo
 $START_DATE = $YEAR . "-01-01";
 $END_DATE = $YEAR . "-12-31";
 $CODI_INSTITUCIO = "5068"; // codigo de IRB Barcelona. Este dato no cambia nunca
