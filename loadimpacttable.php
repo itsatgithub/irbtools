@@ -28,7 +28,7 @@ $comm_params_array = explode(",", $conn_params);
 //mysql_select_db("dev_joomlaatirb");
 	
 // operational db
-$db = mysql_connect("irbsvr3.irb.pcb.ub.es", $comm_params_array[2], $comm_params_array[3]) or die ('I cannot connect to the database because: ' . mysql_error());
+$db = mysql_connect("irbsvr83.irb.pcb.ub.es", $comm_params_array[2], $comm_params_array[3]) or die ('I cannot connect to the database because: ' . mysql_error());
 mysql_select_db("sciprod");
 
 ?>
@@ -123,7 +123,7 @@ echo "End";
 /*
  * Cargando impact factors
  */
-
+/*
 $my_year = '2014';
 
 $query = "SELECT *"
@@ -176,6 +176,7 @@ while ($row = mysql_fetch_assoc($result))
 	}
 }
 echo "End";
+*/
 
 
 
