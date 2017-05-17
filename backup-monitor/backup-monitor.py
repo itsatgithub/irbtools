@@ -10,15 +10,16 @@ with open('backup-monitor-files.yml', 'r') as ymlfile:
 	cfg = yaml.load(ymlfile)
 
 for section in cfg:
-	filename = cfg[section]['backupfile']
-	filename = filename.replace('yyyy', str(today.year))
-	filename = filename.replace('mm', str(today.month))
-	filename = filename.replace('dd', str(today.day))
+	for filename in cfg[section]['backupfiles']:
+		filestr = str(filename)
+		filestr = filestr.replace('yyyy', str(today.year))
+		filestr = filestr.replace('mm', str(today.month))
+		filestr = filestr.replace('dd', str(today.day))
 
-	backupfile = Path(filename)
+		backupfile = Path(filestr)
 
-	if backupfile.is_file():
-	  print('Existe ', filename)
-	else:
-	  print('No Existe ', filename)
+		if backupfile.is_file():
+		  print('Backup ok on', section)
+		else:
+		  print('Backupfile error', filestr, 'on', section)
 

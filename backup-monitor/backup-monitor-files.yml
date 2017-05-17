@@ -1,34 +1,58 @@
 Biostar:
-  backupfile: /a/sysadm/backup/Biostar/Biostar_yyyymmdd.BAK
+  backupfiles:
+    - /a/sysadm/backup/Biostar/Biostar_yyyymmdd.BAK
 DBS:
-  backupfile: /a/sysadm/backup/DBS/yyyymmdd_mysqldump_all_databases.sql
+  backupfiles:
+    - /a/sysadm/backup/DBS/yyyymmdd_mysqldump_all_databases.sql
 eDirectory:
-  backupfile: /a/sysadm/backup/edirectory/ldif/backups/yyyymmdd.groups.ldif
-  backupfile: /a/sysadm/backup/edirectory/ldif/backups/yyyymmdd.ou.ldif
-  backupfile: /a/sysadm/backup/edirectory/ldif/backups/yyyymmdd.users.ldif
+  backupfiles:
+    - /a/sysadm/backup/edirectory/ldif/backups/yyyymmdd.groups.ldif
+    - /a/sysadm/backup/edirectory/ldif/backups/yyyymmdd.ou.ldif
+    - /a/sysadm/backup/edirectory/ldif/backups/yyyymmdd.users.ldif
 Filemaker:
-  backupfile: /a/sysadm/backup/Filemaker/Daily/demodb.fp7 verifica timestamp del fichero
+  backupfiles:
+    - /a/sysadm/backup/Filemaker/Daily/demodb.fp7 verifica timestamp del fichero
 Filemaker13:
-  backupfile: /a/sysadm/backup/Filemaker13/Daily_yyyy-mm-dd_2305/Databases/Salvador Aznar Common Databases/Antibodies.fmp12
+  backupfiles:
+    - /a/sysadm/backup/Filemaker13/Daily_yyyy-mm-dd_2305/Databases/Salvador Aznar Common Databases/Antibodies.fmp12
 irbbarcelona.org:
-  backupfile: /a/sysadm/backup/irbbarcelona.org/yyyymmdd_mysqldump_drupal_test_all_databases.sql
-  backupfile: /a/sysadm/backup/irbbarcelona.org/yyyymmdd_mysqldump_drupal_ope_databases.sql
+  backupfiles:
+    - /a/sysadm/backup/irbbarcelona.org/yyyymmdd_mysqldump_drupal_test_all_databases.sql
+    - /a/sysadm/backup/irbbarcelona.org/yyyymmdd_mysqldump_drupal_ope_databases.sql
 MariaDB:
-  backupfile: /a/sysadm/backup/MariaDB/yyyymmdd_mysqldump_all_databases.sql
+  backupfiles:
+    - /a/sysadm/backup/MariaDB/yyyymmdd_mysqldump_all_databases.sql
 PPMS:
-  backupfile: /a/sysadm/backup/PPMS_W2003/Daily/PPMS verifica timestamp del fichero
+  backupfiles:
+    - /a/sysadm/backup/PPMS_W2003/Daily/PPMS verifica timestamp del fichero
 SBO:
-  backupfile: /a/sysadm/backup/SBO/daily/IRB_Alumni/IRB_Alumni_backup_yyyy_mm_dd_*.bak 
-  backupfile: /a/sysadm/backup/SBO/daily/master/master_backup_yyyy_mm_dd_*.bak 
-  backupfile: /a/sysadm/backup/SBO/daily/model/model_backup_yyyy_mm_dd_*.bak 
-  backupfile: /a/sysadm/backup/SBO/daily/msdb/msdb_backup_yyyy_mm_dd_*.bak 
-  backupfile: /a/sysadm/backup/SBO/daily/RSP/RSP_backup_yyyy_mm_dd_*.bak 
-  backupfile: /a/sysadm/backup/SBO/daily/SBO_IRB/SBO_IRB_backup_yyyy_mm_dd_*.bak
-  backupfile: /a/sysadm/backup/SBO/daily/SBO-COMMON/SBO-COMMON_backup_yyyy_mm_dd_*.bak
-  backupfile: /a/sysadm/backup/SBO/daily/SBODEMOES/SBODEMOES_backup_yyyy_mm_dd_*.bak
-  backupfile: /a/sysadm/backup/SBO/daily/Seidor_BI/Seidor_BI_backup_yyyy_mm_dd_*.bak
-  backupfile: /a/sysadm/backup/SBO/daily/SLDModel.SLDData/SLDModel.SLDData_backup_yyyy_mm_dd_*.bak
+  backupfiles:
+  - /a/sysadm/backup/SBO/daily/IRB_Alumni/IRB_Alumni_backup_yyyy_mm_dd_*.bak 
+  - /a/sysadm/backup/SBO/daily/master/master_backup_yyyy_mm_dd_*.bak 
+  - /a/sysadm/backup/SBO/daily/model/model_backup_yyyy_mm_dd_*.bak 
+  - /a/sysadm/backup/SBO/daily/msdb/msdb_backup_yyyy_mm_dd_*.bak 
+  - /a/sysadm/backup/SBO/daily/RSP/RSP_backup_yyyy_mm_dd_*.bak 
+  - /a/sysadm/backup/SBO/daily/SBO_IRB/SBO_IRB_backup_yyyy_mm_dd_*.bak
+  - /a/sysadm/backup/SBO/daily/SBO-COMMON/SBO-COMMON_backup_yyyy_mm_dd_*.bak
+  - /a/sysadm/backup/SBO/daily/SBODEMOES/SBODEMOES_backup_yyyy_mm_dd_*.bak
+  - /a/sysadm/backup/SBO/daily/Seidor_BI/Seidor_BI_backup_yyyy_mm_dd_*.bak
+  - /a/sysadm/backup/SBO/daily/SLDModel.SLDData/SLDModel.SLDData_backup_yyyy_mm_dd_*.bak
 SCCM:
-    backupfile: /a/sysadm/backup/SCCM/CM_IRB/CM_IRB_backup_yyyy_mm_dd_*.bak
+  backupfiles:
+    - /a/sysadm/backup/SCCM/CM_IRB/CM_IRB_backup_yyyy_mm_dd_*.bak
+    - /a/sysadm/backup/SCCM/master/master_backup_yyyy_mm_dd_*.bak
+    - /a/sysadm/backup/SCCM/model/model_backup_yyyy_mm_dd_*.bak
+    - /a/sysadm/backup/SCCM/msdb/msdb_backup_yyyy_mm_dd_*.bak
+    - /a/sysadm/backup/SCCM/ReportServer/ReportServer_backup_yyyy_mm_dd_*.bak
+    - /a/sysadm/backup/SCCM/ReportServerTempDB/ReportServerTempDB_backup_yyyy_mm_dd_*.bak
+    - /a/sysadm/backup/SCCM/SUSDB/SUSDB_backup_yyyy_mm_dd_*.bak
+Sophos:
+  backupfiles:
+    - /a/sysadm/backup/Sophos/yymmdd_sophos_backup.bak
+Unicorn:
+  backupfiles:
+    - /a/sysadm/backup/Unicorn/Unicorn_SCHEDULED_BACKUP_yyyymmdd_030000.BAK
+    - /a/sysadm/backup/Unicorn/Unicorn_SCHEDULED_BACKUP_yyyymmdd_030000.log
+
 
 
