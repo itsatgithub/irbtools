@@ -35,10 +35,10 @@ if (mysqli_connect_errno()) {
 }
 */
 
-define("DB_SERVER", "complete");
-define("DB_USERNAME", "complete");
-define("DB_PASSWORD", "complete");
-define("DB_DATABASE", "complete");
+define("DB_SERVER", "irbsvr83.irb.pcb.ub.es");
+define("DB_USERNAME", "irbtools");
+define("DB_PASSWORD", "7245Abde");
+define("DB_DATABASE", "sciprod");
 $db = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 if (mysqli_connect_errno()) {
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -138,8 +138,8 @@ echo "End";
 /*
  * Cargando impact factors
  */
-/*
-$my_year = '2018';
+
+$my_year = '2019';
 
 $query = "SELECT *"
 . " FROM jos_sci_upload_impact_factor"
@@ -212,7 +212,7 @@ while ($row = mysqli_fetch_assoc($result))
 	}
 }
 echo "End";
-*/
+
 
 
 

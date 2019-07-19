@@ -74,7 +74,7 @@ if ($edir && $ad) {
     echo "Edir Bind result is " . $edir_bind . "<br />";
     
     $ldaprdn = 'CN=Administrator,CN=users,DC=irbbarcelona,DC=pcb,DC=ub,DC=es';
-	$ldappass = 'f25Wjt4D';  // associated password
+	$ldappass = '*********';  // associated password
     $ad_bind=ldap_bind($ad, $ldaprdn, $ldappass)
     //$ad_bind=ldap_bind($ad) // anonymous bind
     or die("Couldn't bind to AD!");

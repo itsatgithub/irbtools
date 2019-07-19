@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 
-import yaml
+import yaml # this manages yml files
 import datetime
-from pathlib import Path
+import smtplib # this manages emails
 
-today = datetime.date.today()
+from pathlib import Path
+from email.mime.text import MIMEText # import the email modules
+
+today = datetime.date.today() # this is used later on the generation of the file name
 
 with open('backup-monitor-files.yml', 'r') as ymlfile:
 	cfg = yaml.load(ymlfile)
+
+# sending email?
+send_email = False
+text_email = ''
 
 for section in cfg:
 	for filename in cfg[section]['backupfiles']:
@@ -18,8 +25,21 @@ for section in cfg:
 
 		backupfile = Path(filestr)
 
-		if backupfile.is_file():
-		  print('Backup ok on', section)
-		else:
-		  print('Backupfile error', filestr, 'on', section)
+		if not backupfile.exists():
+			text_email += 'File not found %s on %s \r' % (filestr, section)
+			send_email = True
 
+if send_email:
+	with open('textmail.txt') as fp:
+		# create a text/plain message
+		#msg = MIMEText(fp.read())
+		msg = MIMEText(text_email)
+
+	msg['Subject'] = 'This is the subject'
+	msg['From'] = 'its@irbbarcelona.org'
+	msg['To'] = 'roberto.bartolome@irbbarcelona.org'
+
+	# send the email via SMTP server
+	s = smtplib.SMTP('smtp.pcb.ub.es')
+	s.send_message(msg)
+	s.quit()
